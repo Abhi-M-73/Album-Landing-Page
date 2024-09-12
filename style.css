@@ -33,6 +33,10 @@ nav {
     justify-content: space-between;
 }
 
+nav > i{
+    display: none;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -85,6 +89,7 @@ nav {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    border: none;
 }
 
 .cta-btn-secondary {
@@ -205,9 +210,27 @@ footer a:hover {
 
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 600px) {
+
+   
+
+    nav > i{
+        display: initial;
+        font-size: 2rem;
+    }
+
+    nav > .nav-links{
+        display: none;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
         line-height: 3rem;
+        margin-top: 5rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        
     }
 
     .hero-content {
@@ -216,6 +239,7 @@ footer a:hover {
 
     .album-cover img {
         height: auto;
+        margin-top: 5rem;
     }
 
     .features-list {
@@ -229,7 +253,8 @@ footer a:hover {
 
     .cta-btn, .cta-btn-secondary {
         margin-bottom: 1rem;
-        display: block;
+        width: 40%;
+       
     }
 
     .tour-dates ul {
