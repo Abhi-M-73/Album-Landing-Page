@@ -153,13 +153,12 @@ nav > i{
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .feature img {
-    height: 15rem;
-    width: 15rem;
+    height: 17rem;
+    width: 18rem;
     border-radius: 2rem;
     object-fit: cover;
     margin-bottom: 1rem;
